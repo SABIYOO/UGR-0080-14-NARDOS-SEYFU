@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+            
+</head>
+<body>
+    <header style="box-shadow: 0 5px 15px rgba(0,0,0,0.06);" class="box-shadow pr-5 py-3">
+        <div class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+              <img src="image/logo_n_1_70x47.jpg" alt="" id="logo">
+            </a>
+        
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-size-5 " href="index.html">Home</a>
+              <a class="navbar-item is-size-5  " href="about.html">About</a>
+              <a class="navbar-item is-size-5 " href="resume.html">Resume</a>
+              <a class="navbar-item is-size-5 " href="other.html">Other</a>
+              <a class="navbar-item is-size-5 " href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+        
+        </header>
+    <section class="section">
+        
+        <div >
+            <img width="100%" style="border-radius: 5px;" src="image\AAU-Location1.png" alt="">
+        </div>
+        <div id="map"class="py-6 is-flex is-justify-content-center" >
+           <div class="columns is-variable is-desktop">
+              <div class="column is-6">
+                 <div class="box" style="border: solid;">
+                <div>
+                <center><img src="image\logo_n_1_70x47.jpg" alt=""></center>
+                <h1 class="is-size-3 has-text-primary">get in touch</h1><br>
+                <p>Fill out my form below and send me an email.</p>
+                <input id="input1" class="px-6 py-3 my-3" placeholder="Name*" text="text"> <br>
+                <input id="input2" class="px-6 py-3 my-3" placeholder="Email*" text="text"> <br>
+                <input id="input3" class="px-6 py-3 my-3" placeholder="Phone number*" type="text"> <br>
+                <input id="input4" class="px-6 py-6 my-3" id="message" placeholder="message*" >
+                    <div class="is-flex is-justify-content-space-between">
+                        <div>
+                        <button style="background-color: rgb(169, 233, 227);" class="button mb-3 mr-5" >send message</button>
+                        </div>
+                        <div>
+                        <p id = "field">*Marked fields are required to fill.</p>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+                 </div>
+              </div>
+            <div class="column is-6">
+              <div class="box pt-6" style="border: solid; height: 600px;">
+                <center>
+                    <img src="image\logo_n_1_70x47.jpg" alt="">
+                    <h1 class="is-size-2 has-text-primary has-text-weight-bold mt-5">Catch me here</h1>
+                </center>
+                
+                <div class="is-flex is-justify-content-space-between has-text-centered mt-6 mt-6">
+                    <div>
+                        <a href="#"><img src="image\phone-symbol-2-256x256_50x50.png" alt=""></a>
+                        <p>0922295467</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="image\image-50x50.jpg" alt=""></a>
+                        <p>nardosseyfu59gmail.com</p>
+                    </div>
+                </div>
+                 <center><h1 class="is-size-2 has-text-weight-bold has-text-primary mt-6 pt-6">Follow me</h1></center>
+                 <div class="column">
+                        <ul class="is-flex is-justify-content-space-evenly">
+                        <a href="#"><li><i class="fa-brands fa-facebook is-size-2 has-text-primary"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-instagram is-size-2 has-text-primary"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin is-size-2 has-text-primary" ></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-tiktok is-size-2 has-text-primary"></i></li></a>
+                        </ul>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <footer class="py-6 has-text-white has-background-primary">
+        <center><p>Nardos Portfolio © 2023, All Rights Reserved.</p></center>
+    </footer>
+    <script>
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+          // Get all "navbar-burger" elements
+          const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+          // Check if there are any navbar burgers
+          if (navbarBurgers.length > 0) {
+            // Add a click event listener to each burger
+            navbarBurgers.forEach((navbarBurger) => {
+              navbarBurger.addEventListener('click', () => {
+                // Get the target from the "data-target" attribute
+                const target = navbarBurger.dataset.target;
+                const targetElement = document.getElementById(target);
+        
+                // Toggle the "is-active" class on both the burger and the target menu
+                navbarBurger.classList.toggle('is-active');
+                targetElement.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+        
+            </script>
+            
+</body>
+</html>
