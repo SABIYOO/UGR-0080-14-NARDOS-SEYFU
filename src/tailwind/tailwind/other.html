@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>other</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+  <header class="bg-white shadow-lg">
+    <nav class="container mx-auto px-6 py-3 flex items-center justify-between">
+      <a class="text-gray-800 font-bold text-xl" href="#">
+        <img src="image/logo_n_1_70x47.jpg" alt="Logo" id="logo">
+      </a>
+  
+      <div class="hidden md:flex md:items-center">
+        <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="index.html">Home</a>
+        <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="about.html">About</a>
+        <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="resume.html">Resume</a>
+        <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="other.html">Other</a>
+        <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="contact.html">Contact</a>
+      </div>
+  
+      <div class="flex items-center md:hidden">
+        <button id="menu-toggle" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button> 
+      </div>
+  
+      <div id="mobile-menu" class="hidden md:hidden">
+        <button id="menu-close" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+  
+        <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="index.html">Home</a>
+        <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="about.html">About</a>
+        <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="resume.html">Resume</a>
+        <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="other.html">Other</a>
+        <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="contact.html">Contact</a>
+      </div>
+  
+    </nav>
+  </header>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script>
+    var menuToggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var menuClose = document.getElementById('menu-close');
+  
+    menuToggle.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    menuClose.addEventListener('click', function() {
+      mobileMenu.classList.add('hidden');
+    });
+  
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 767) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+<section class="bg-cover bg-no-repeat bg-center" style="background-image: url('image/istockphoto-1284684092-1024x1024.jpg'); height: 500px;">
+  <div class="flex items-center justify-center h-full">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">What do I love to do?</h1>
+      <h2 class="text-xl"><q>ipsumtur non consectetur natus suscipit quisquam corrupti. Optio, veritatis cupiditate.</q></h2>
+    </div>
+  </div>
+</section>
+    <section class="section" >
+        <center><h1 class="text-green-500 text-4xl my-5">Hobbies</h1></center>
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center">
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/istockphoto-1078377006-1024x1024.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---Games---</h2>
+                <p>ident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitamettur aut amet provident porro sitips</p>
+              </div>
+            </div>
+            <!-- Repeat the above code for the remaining columns -->
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/istockphoto-1283020925-1024x1024.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---Books---</h2>
+                <p>porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitamettur aut amet provident porro sitips</p>
+              </div>
+            </div>
+            <!-- Repeat the above code for the remaining columns -->
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/istockphoto-1373887893-1024x1024.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---walking---</h2>
+                <p>Lorem Lorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitamettur aut amet provident porro sitips</p>
+              </div>
+            </div>
+            <!-- Repeat the above code for the remaining columns -->
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/istockphoto-1408422261-1024x1024.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---movies---</h2>
+                <p>amet provident porro amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitamettur aut amet provident porro sitips</p>
+              </div>
+            </div>
+            <!-- Repeat the above code for the remaining columns -->
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/elena-mozhvilo-CfpCqN9qkrI-unsplash.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---painting---</h2>
+                <p>amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitamettur aut amet provident porro sitips</p>
+              </div>
+            </div>
+            <!-- Repeat the above code for the remaining columns -->
+            <div class="border border-black rounded-lg p-4">
+              <div class="imgcan">
+                <img class="w-full" src="image/nguyen-thu-hoai-SJ3mMFF2Qeg-unsplash.jpg" alt="">
+              </div>
+              <div class="discriptioncan">
+                <h2 class="text-primary text-center text-lg font-bold">---photography---</h2>
+                <p>amet provident porro sitLorem ipsum dolor sit amettur aut amet providentI apologize for the confusion, but as an AI text-based model, I don't have the capability to display or execute HTML and CSS code directly. My purpose is to provide information and assist with any questions you may have.
+        
+        To see the desired layout, you can copy and paste the updated code into an HTML file and open it in a web browser. The modifications I provided will arrange the smaller containers into two rows and three columns, centered within the container.
+    </section>
+    <section class="section">
+        <center>
+            <h1 class="text-green-500 text-4xl pt-5">Travel</h1>
+            <q>Lorem nderit sint, architecto vel reiciendis minima repellendus sed deleniti inventore quibusdam.</q>
+            <h3 class="my-4 is-size-5 has-text-primary">places i have visted</h3>
+        </center>
+        <div>
+          <div class="container mx-auto" style="width: 90%;">
+            <div class="border-black p-3 border-2 w-full flex flex-wrap mb-6">
+              <div class="w-full md:w-1/2">
+                <div class="imgcan">
+                  <img class="w-full" src="image\mulugeta-wolde-6SgfEwkA02Y-unsplash.jpg" alt="">
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 pl-4">
+                <div class="discriptioncan flex flex-col justify-end h-full">
+                  <h1 class="text-green-500 text-4xl text-center">laibela</h1>
+                  <p class="mt-auto">Lorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="border-black p-3 border-2 w-full flex flex-wrap ">
+              <div class="w-full md:w-1/2">
+                <div class="imgcan">
+                  <img class="w-full" src="image/bdu-fellowship-vlm-UnqrHaKPPTI-unsplash.jpg" alt="">
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 pl-4">
+                <div class="discriptioncan flex flex-col justify-end h-full">
+                  <h1 class="text-green-500 text-4xl text-center">semien mountains</h1>
+                  <p class="mt-auto">Lorem ipsum dolor sit, amet consecuo quod dicta Lorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sitLorem ipsum dolor sit amettur aut amet provident porro sit dolor sit amettur aut amet provident porro sitv amet consecuo quod dicta amet consecuo quod dictav fugiat animi laudantium natus iusto non fuga qui modi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+        <div class="my-5">
+             <video width="100%" autoplay muted loop  src="image/video_2023-11-25_21-56-42.mp4"></video>
+        </div>
+    
+        <section class="section my-6 mx-6 px-4" height="500px">
+          <h1 class="text-green-500 text-center text-4xl my-4">Places I Want to Visit</h1>
+          <div height="500px" class="box can border-black border-2 w-full p-5">
+            <div class="flex flex-wrap">
+              <div class="w-full md:w-1/2">
+                <div class="discriptioncan mb-5">
+                  <h1 class="text-green-500 text-center text-4xl pt-6 mt-6">Great Wall of China</h1>
+                  <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perferendis excepturi vitae voluptatem recusandae aspernatur? Dolorum, iure voluptate aut nesciunt, fugit assumenda molestiae quae vel cumque aspernatur, a iste quas.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="imgcan" >
+                  <img class="w-full" src="image/istockphoto-1051651510-1024x1024.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="py-6 mt-6 bg-green-400">
+          <center><p class="text-white-500" >Nardos Portfolio © 2023, All Rights Reserved.</p></center>
+        </footer>
+    <script>
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+          // Get all "navbar-burger" elements
+          const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+          // Check if there are any navbar burgers
+          if (navbarBurgers.length > 0) {
+            // Add a click event listener to each burger
+            navbarBurgers.forEach((navbarBurger) => {
+              navbarBurger.addEventListener('click', () => {
+                // Get the target from the "data-target" attribute
+                const target = navbarBurger.dataset.target;
+                const targetElement = document.getElementById(target);
+        
+                // Toggle the "is-active" class on both the burger and the target menu
+                navbarBurger.classList.toggle('is-active');
+                targetElement.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+        
+            </script>
+            
+</body>
+</html>

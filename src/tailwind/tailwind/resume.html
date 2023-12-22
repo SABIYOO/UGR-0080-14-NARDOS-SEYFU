@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+            
+            
+    
+</head>
+<body >
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-3 flex items-center justify-between">
+          <a class="text-gray-800 font-bold text-xl" href="#">
+            <img src="image/logo_n_1_70x47.jpg" alt="Logo" id="logo">
+          </a>
+      
+          <div class="hidden md:flex md:items-center">
+            <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="index.html">Home</a>
+            <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="about.html">About</a>
+            <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="resume.html">Resume</a>
+            <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="other.html">Other</a>
+            <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="contact.html">Contact</a>
+          </div>
+      
+          <div class="flex items-center md:hidden">
+            <button id="menu-toggle" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+              <i class="fas fa-bars text-2xl"></i>
+            </button> 
+          </div>
+      
+          <div id="mobile-menu" class="hidden md:hidden">
+            <button id="menu-close" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+              <i class="fas fa-times text-2xl"></i>
+            </button>
+      
+            <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="index.html">Home</a>
+            <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="about.html">About</a>
+            <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="resume.html">Resume</a>
+            <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="other.html">Other</a>
+            <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="contact.html">Contact</a>
+          </div>
+      
+        </nav>
+      </header>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+      <script>
+        var menuToggle = document.getElementById('menu-toggle');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var menuClose = document.getElementById('menu-close');
+      
+        menuToggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      
+        menuClose.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 767) {
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      </script>
+        <section id="resume" class="m-6 pl-5 p-6">
+          <div class="container">
+              <div class="content text-center pt-5">
+                  <img class="justify-center" src="image\logo_n_1_70x47.jpg" alt="">
+                  <h1 class="title text-green-400 text-4xl">Resume</h1>
+                  <p class="text-2xl mb-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum accusamus deserunt error molestias earum eveniet.</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="education mr-5 ml-6 pl-6">
+                      <h1 class="text-3xl text-green-400">Education</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam, illu m facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
+                      <article class="border-l-2 border-teal-400 p-6 my-6">
+                          <h2 class="subtitle text-green-500">BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
+                          <h3 class="text-green-500">Addis Ababa Institute Of Technolgy / 2021-2026</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+                      </article>
+                      <article class="border-l-2 border-teal-500 p-6 my-6">
+                          <h2 class="subtitle text-green-400">BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
+                          <h3 class="text-green-500">Addis Ababa Institute Of Technolgy / 2021-2026</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+                      </article>
+                  </div>
+                  <div class="experience ml-6 pl-6">
+                      <h1 class="text-3xl text-green-500">Experience</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam, illu m facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
+                      <article class="border-l-2 border-teal-400 p-6 my-6">
+                          <h2 class="subtitle text-green-500">LEAD DESIGN & DEVELOPMENT</h2>
+                          <h3 class="subtitle text-green-500">Addis webdev</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+                      </article>
+                      <article class="border-l-2 border-teal-400 p-6 my-6">
+                          <h2 class="subtitle text-green-500">JUNIOR DESIGN & DEVELOPMENT</h2>
+                          <h3 class="subtitle text-green-500">ale Institute Of Technolgy</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+                      </article>
+                  </div>
+              </div>
+              <div>
+                  <button class="rounded-md bg-green-400 py-2 px-6"><a href="contact.html">Contact me</a></button>
+              </div>
+          </div>
+      </section>
+      <footer class="py-6 mt-6 bg-green-400">
+        <center><p class="text-white-500" >Nardos Portfolio © 2023, All Rights Reserved.</p></center>
+      </footer>
+        
+        <script>
+        
+
+            document.addEventListener('DOMContentLoaded', () => {
+              // Get all "navbar-burger" elements
+              const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            
+              // Check if there are any navbar burgers
+              if (navbarBurgers.length > 0) {
+                // Add a click event listener to each burger
+                navbarBurgers.forEach((navbarBurger) => {
+                  navbarBurger.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = navbarBurger.dataset.target;
+                    const targetElement = document.getElementById(target);
+            
+                    // Toggle the "is-active" class on both the burger and the target menu
+                    navbarBurger.classList.toggle('is-active');
+                    targetElement.classList.toggle('is-active');
+                  });
+                });
+              }
+            });
+            
+                </script>
+                
+</body>
+</html>

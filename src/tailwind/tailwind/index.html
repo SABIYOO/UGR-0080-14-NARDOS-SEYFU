@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       .hidden {
+              display: none;
+          }
+    </style>
+</head>
+<body>
+ 
+  
+      <header class="bg-white shadow-lg">
+          <nav class="container mx-auto px-6 py-3 flex items-center justify-between">
+            <a class="text-gray-800 font-bold text-xl" href="#">
+              <img src="image/logo_n_1_70x47.jpg" alt="Logo" id="logo">
+            </a>
+        
+            <div class="hidden md:flex md:items-center">
+              <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="index.html">Home</a>
+              <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="about.html">About</a>
+              <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="resume.html">Resume</a>
+              <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="other.html">Other</a>
+              <a class="text-black-300 hover:text-green-400 px-4 text-2xl" href="contact.html">Contact</a>
+            </div>
+        
+            <div class="flex items-center md:hidden">
+              <button id="menu-toggle" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+              </button> 
+            </div>
+        
+            <div id="mobile-menu" class="hidden md:hidden">
+              <button id="menu-close" type="button" class="text-gray-800 hover:text-gray-300 focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+              </button>
+        
+              <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="index.html">Home</a>
+              <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="about.html">About</a>
+              <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="resume.html">Resume</a>
+              <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="other.html">Other</a>
+              <a class="text-black-300 hover:text-gray-800 block px-4 py-2 rounded-md text-base font-medium" href="contact.html">Contact</a>
+            </div>
+          </nav>
+      </header>
+  
+ 
+<section class="section flex flex-col items-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div class="flex justify-center">
+      <img class="w-md m-4" src="image\code girl.webp" alt="">
+    </div>
+    <div class="flex flex-col justify-center pl-5">
+      <div class="font-bold text-primary mt-5 text-2xl">
+        <h3 class="text-green-400 text-6xl">Hello, it's</h3>
+        <h1 class="text-green-400 text-6xl">Nardos</h1>
+        <h1 class="text-green-400 text-6xl">Seyfu</h1>
+        <h3 class="text-green-400 text-6xl">I design, code, and build superficial things, and I love what I do.</h3>
+      </div>
+      <div class="mt-6">
+        <h4 class="text-green-500 text-5xl">Follow me</h4>
+        <ul class="flex justify-evenly">
+          <li><a class="text-green-400 text-3xl" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="text-green-400 text-3xl" href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="text-green-400 text-3xl" href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="text-green-400 text-3xl" href="#"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    var menuToggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var menuClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    menuClose.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 767) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+<section class="section flex flex-col items-center">
+  <h1 class="text-4xl title text-green-500">services</h1>
+  <p class="text-center">We provide the best solutions for your dream, still adapting to your budget while maintaining the quality of the project.</p>
+  <div class="m-5">
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <div class="w-full border border-black border-solid rounded-lg p-3">
+          <i class="fas fa-computer text-green-500"></i>
+          <h2 class="text-green-500 text-base title text-center">Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate vero ducimus, ipsum similique eos, illum fugit consequatur odit exercitationem alias eius cumque! Eaque possimus ex culpa dolore dignissimos aspernatur?</p>
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <div class="w-full border border-black border-solid rounded-lg p-3">
+          <i class="fas fa-computer text-green-500"></i>
+          <h2 class="text-green-500 text-base title text-center">Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate vero ducimus, ipsum similique eos, illum fugit consequatur odit exercitationem alias eius cumque! Eaque possimus ex culpa dolore dignissimos aspernatur?</p>
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <div class="w-full border border-black border-solid rounded-lg p-3">
+          <i class="text-green-500 fas fa-fire"></i>
+          <h2 class="text-green-500 text-base title text-center">Marketing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate vero ducimus, ipsum similique eos, illum fugit consequatur odit exercitationem alias eius cumque! Eaque possimus ex culpa dolore dignissimos aspernatur?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+<section class="section mx-auto my-8">
+  <div class="flex flex-col justify-center items-center text-center">
+    <h1 class="text-3xl text-green-500">Projects</h1>
+    <p class="py-5">uctus in posuere mattis tempor eu vestibulum. Malesuada risus felis consequat facilisis aenean quis. In nec.</p>
+  </div>
+  <div class="container m-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="flex flex-col mb-5 border border-black">
+        <figure>
+          <img class="w-full h-auto pb-5" src="image\apple.png" alt="">
+          <figcaption class="flex justify-between border border-black">
+            <div>
+              <p class="text-lg text-primary">Apple clone</p>
+            </div>
+            <div>
+              <button class="button px-6 border-l border-black"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="flex flex-col mb-5 border border-black">
+        <figure>
+          <img class="w-full h-auto" src="image\e-coomerce.png" alt="">
+          <figcaption class="flex justify-between border border-black">
+            <div>
+              <p class="text-lg text-primary">e-commerce web</p>
+            </div>
+            <div>
+              <button class="button px-6 border-l border-black"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="flex flex-col mb-5 border border-black">
+        <figure>
+          <img class="w-full h-auto" src="image\ecom2.jpg" alt="">
+          <figcaption class="flex justify-between border border-black">
+            <div>
+              <p class="text-lg text-primary">e-commerce web</p>
+            </div>
+            <div>
+              <button class="button px-6 border-l border-black"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="py-6 mt-6 bg-green-400">
+  <center><p class="text-white-500" >Nardos Portfolio © 2023, All Rights Reserved.</p></center>
+</footer>
+    <script>
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+          // Get all "navbar-burger" elements
+          const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+          // Check if there are any navbar burgers
+          if (navbarBurgers.length > 0) {
+            // Add a click event listener to each burger
+            navbarBurgers.forEach((navbarBurger) => {
+              navbarBurger.addEventListener('click', () => {
+                // Get the target from the "data-target" attribute
+                const target = navbarBurger.dataset.target;
+                const targetElement = document.getElementById(target);
+        
+                // Toggle the "is-active" class on both the burger and the target menu
+                navbarBurger.classList.toggle('is-active');
+                targetElement.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+        
+            </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>       
+</body>
+</html>
