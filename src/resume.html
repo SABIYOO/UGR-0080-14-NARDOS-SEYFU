@@ -4,92 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+            
+    
 </head>
-<body>
-    <header>
-        <div>
-            <img src="C:\Users\hp\Desktop\portfolio\image\logo_n_1_70x47.jpg" alt="">
-        </div>
-    <nav>
-        
-        <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="about.html"><li>About</li></a>
-        <a href="resume.html"><li>Resume</li></a>
-        <a href="other.html"><li>Other</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-        
+<body >
+    
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-4">
+      <img class="pl-3" src="image/logo_n_1_70x47.jpg" alt="Logo" id="logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end px-4" id="navbarNav">
+        <ul class="navbar-nav mr-auto fs-3 justify-content-between">
+          <li class="nav-item active">
+            <a class="nav-link text-dark pl-3" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-3" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-3" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pl-3" href="other.html">Other</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
         </ul>
+      </div>
     </nav>
-    <div>
-        <i class="fa-solid fa-bars"></i>
-     </div>
     </header>
-    <section>
-        <center>
-            <img src="C:\Users\hp\Desktop\portfolio\image\logo_n_1_70x47.jpg" alt="">
-            <h1>Resume</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut cum accusamus deserunt error molestias earum eveniet.</p>
-        </center>
-        <div>
-            <div>
-                <h1>Education</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam,
-                     illu m facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
-                <article>
-                    <h2>BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
-                    <h3>Addis Ababa Institute Of Technolgy/ 2021-2026</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, 
-                        voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!
-                    </p>
+    
+    <script>
+      function toggleMenu() {
+        var navbar = document.querySelector('.navbar-collapse');
+        navbar.classList.toggle('show');
+      }
+    </script>
+    <style>
+      ul li{
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 600;
+      }
+      .navbar-nav .nav-item .nav-link:hover {
+          color: #088170;
+      }
+      .container {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 600;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+      }
+    </style>
 
-                </article>
 
-                <article>
-                    <h2>BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
-                    <h3>Addis Ababa Institute Of Technolgy/ 2021-2026</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, 
-                        voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!
-                    </p>
 
-                </article>
-                
-                
-            </div>
 
-            <div>
-                <h1>Experience</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam,
-                     illu m facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
-                <article>
-                    <h2>LEAD DESIGN & DEVELOPMENT</h2>
-                    <h3>Addis webdev</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, 
-                        voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!
-                    </p>
 
-                </article>
-
-                <article>
-                    <h2>JUNIOR DESIGN & DEVELOPMENT</h2>
-                    <h3>ale Institute Of Technolgy</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, 
-                        voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!
-                    </p>
-
-                </article>
-
-            </div>
+<section id="resume" class="m-6 pl-5 p-6">
+  <div class="container">
+    <div class="content text-center pt-5">
+      <img src="image\logo_n_1_70x47.jpg" alt="" class="justify-center">
+      <h1 class="title text-success text-4xl">Resume</h1>
+      <p class="text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum accusamus deserunt error molestias earum eveniet.</p>
+    </div>
+    <div  class="row">
+      <div class="col-md-6">
+        <div class="education mr-5 ml-6 pl-6">
+          <h1 class="text-3xl text-success">Education</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam, illum facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
+          <article style="border-left: solid #088170; padding-left: 10px;" class="border-l-2 border-teal-400 p-6 my-6">
+            <h2 class="subtitle text-success">BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
+            <h3 class="text-success">Addis Ababa Institute Of Technolgy / 2021-2026</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+          </article>
+          <article style="border-left: solid #088170; padding-left: 10px;" class="border-l-2 border-teal-500 p-6 my-6">
+            <h2 class="subtitle text-success">BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING</h2>
+            <h3 class="text-success">Addis Ababa Institute Of Technolgy / 2021-2026</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+          </article>
         </div>
-        <div>
-            <button><a href="contact.html">contact me</a></button>
+      </div>
+      <div class="col-md-6">
+        <div class="experience ml-6 pl-6">
+          <h1 class="text-3xl text-success">Experience</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa consectetur asperiores dolore, laboriosam quibusdam exercitationem aliquam, illum facilis rerum, tempore voluptas? Ratione delectus possimus quis itaque provident dolor eligendi!</p>
+          <article style="border-left: solid #088170;padding-left: 10px;" class="border-l-2 border-teal-400 p-6 my-6">
+            <h2 class="subtitle text-success">LEAD DESIGN & DEVELOPMENT</h2>
+            <h3 class="subtitle text-success">Addis webdev</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+          </article>
+          <article style="border-left: solid #088170; padding-left: 10px;" class="border-l-2 border-teal-400 p-6 my-6">
+            <h2 class="subtitle text-success">JUNIOR DESIGN & DEVELOPMENT</h2>
+            <h3 class="subtitle text-success">ale Institute Of Technolgy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque quibusdam corporis optio voluptates in doloribus, dolor, ad, voluptatibus tempore natus magni et laboriosam quaerat eligendi a sunt repudiandae aliquid!</p>
+          </article>
         </div>
-        <footer>
-            <center><p>Nardos Portfolio © 2023, All Rights Reserved.</p></center>
-        </footer>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="contact.html" class="btn btn-success btn-lg rounded-md">Contact me</a>
+    </div>
+  </div>
+</section>
+      
+        
+      <footer class="bg-success mt-4 text-light text-center py-4">
+        <div class="container">
+            <p> Nardos Portfolio © 2023, All Rights Reserved.</p>
+        </div>
+      </footer>  
+                
 </body>
 </html>
